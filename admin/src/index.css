@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+input[type='text'], input[type='password'], input[type='email'], input[type='number'] {
+    @apply w-full border my-2.5 py-3 px-3 rounded-[0.5em] shadow-sm shadow-gray-100 text-[1.05em] font-normal
+}
+
+
+textarea {
+    @apply w-full border my-2 py-2 px-3 rounded-2xl shadow-sm shadow-gray-100 text-[1.05em];
+}
+
+textarea:focus {
+    outline: transparent;
+    border: 1px solid rgb(176, 176, 176)
+}
+
+input:focus {
+    outline: transparent;
+    border: 1px solid rgb(176, 176, 176)
+}
+
+button.primary {
+    @apply bg-primary px-2 py-2.5 border rounded-[0.5em] text-white mt-3 w-full text-lg;
+}
+
+button.primary:hover {
+    @apply bg-[#eb4157]
+}
+
+button.secondary {
+    @apply bg-white px-2 py-2.5 rounded-[0.5em] border text-black hover:bg-zinc-50 mt-3 w-full text-lg;
+}
